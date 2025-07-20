@@ -1,5 +1,3 @@
-# Chakravyuh
-Chakravyuh 🛡️ is a military-grade encryption and intrusion response system featuring chaotic AES encryption, system fingerprint logging, IP-tracking decoy triggers, VPN scrambling, and adaptive countermeasures. Built for red teams, honeypots, and cyber defense simulations.
 # Chakravyuh 🛡️
 A military-grade encryption, intrusion detection, and decoy-trigger system designed for cyber defense, deception, and threat response in high-security environments.
 
