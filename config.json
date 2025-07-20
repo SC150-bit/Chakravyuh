@@ -1,0 +1,5 @@
+{
+    "decoy_path": "decoy.txt",
+    "encrypted_output": "secret.enc",
+    "intrusion_trigger_count": 3
+}

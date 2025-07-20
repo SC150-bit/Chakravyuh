@@ -1,0 +1,37 @@
+2025-07-21 01:50:15.440065 - Intrusion detected from: {'os': 'Windows', 'mac': '0xa4423b7a48fa', 'cpu': 'Intel64 Family 6 Model 126 Stepping 5, GenuineIntel', 'hostname': 'DESKTOP-GFM9LUP'}
+{
+  "timestamp": "2025-07-21 02:09:15.478060",
+  "intrusion_from": {
+    "os": "Windows",
+    "mac": "0xa4423b7a48fa",
+    "cpu": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+    "hostname": "DESKTOP-GFM9LUP"
+  }
+}
+{
+  "timestamp": "2025-07-21 02:18:23.501779",
+  "intrusion_from": {
+    "os": "Windows",
+    "mac": "0xa4423b7a48fa",
+    "cpu": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+    "hostname": "DESKTOP-GFM9LUP"
+  }
+}
+{
+  "timestamp": "2025-07-21 02:27:40.055464",
+  "intrusion_from": {
+    "os": "Windows",
+    "mac": "0xa4423b7a48fa",
+    "cpu": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+    "hostname": "DESKTOP-GFM9LUP"
+  }
+}
+{
+  "timestamp": "2025-07-21 02:39:03.551785",
+  "intrusion_from": {
+    "os": "Windows",
+    "mac": "0xa4423b7a48fa",
+    "cpu": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+    "hostname": "DESKTOP-GFM9LUP"
+  }
+}
