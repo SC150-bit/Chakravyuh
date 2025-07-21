@@ -1,4 +1,3 @@
-import platform
 import uuid
 import socket
 import os
@@ -16,18 +15,23 @@ def get_fingerprint():
         "hostname": socket.gethostname()
     }
 
-def log_intrusion():
+def log_intrusion(ip_address="Unknown", status="Triggered"):
     try:
         fingerprint = get_fingerprint()
+        fingerprint["ip"] = ip_address
+
         log_entry = {
             "timestamp": str(datetime.datetime.now()),
-            "intrusion_from": fingerprint
+            "intrusion_from": fingerprint,
+            "status": status
         }
 
         with open("intrusion_log.txt", "a") as f:
-            f.write(json.dumps(log_entry, indent=2) + "\n")
+            f.write(json.dumps(log_entry) + "\n")
+
         print("[+] Intrusion logged.")
 
+        # Open the decoy file
         if os.path.exists(DECOY_FILE):
             webbrowser.open(DECOY_FILE)
             print(f"[+] Decoy launched: {DECOY_FILE}")
