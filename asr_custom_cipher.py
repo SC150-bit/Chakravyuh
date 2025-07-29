@@ -18,7 +18,7 @@ class Encode:
                 f"Error: Could not decode input file '{input_filepath}' with UTF-8. Try a different encoding if known.")
             return
 
-        key_str = input("Enter Key ")
+        key_str = input("Enter Key (space-separated integers): ")
         try:
             key = list(map(int, key_str.split()))
         except ValueError:
@@ -90,7 +90,7 @@ class Decode:
                 f"Error: Could not decode input file '{input_filepath}' with UTF-8. Try a different encoding if known.")
             return
 
-        key_str = input("Enter Key ")
+        key_str = input("Enter Key (space-separated integers): ")
         try:
             key = list(map(int, key_str.split()))
         except ValueError:
@@ -163,11 +163,13 @@ class Decode:
 
         return decrypted
 
-            #Example usage
-
+# Example Usage:
 #encode_obj = Encode()
 #decode_obj = Decode()
+
+    
 #print("--- Encoding ---")
 #encode_obj.encoder("plaintext.txt", "encrypted.txt")
+
 #print("\n--- Decoding ---")
 #decode_obj.decoder("encrypted.txt", "decrypted.txt")
